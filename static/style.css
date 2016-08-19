@@ -2,24 +2,50 @@ html, body{
   margin: 25px;
   height: 100%;
   width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 120%;
 }
 
 key {
-  background-color: lightgrey;
-  width: 100%;
-  border: 25px solid green;
-  padding: 25px;
-  margin: 25px;
+  /*background-color: lightgrey;*/
+  width: 40%;
+  display: block;
+  margin: auto;
+  /*float: center;*/
+  text-align: center;
+  padding: 200px 0 20px;
 }
 
 value{
-  border: 2px solid grey;
+  /*border: 2px solid grey;
+  float: center;
+  clear: left;*/
+  width: 60%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-top-style: dotted;
+  border-top-color: #4CAF50;
 }
 
 right{
-  background-color: lightgrey;
+  /*background-color: lightgrey;
   width: 5px;
   border: 5px solid lightgreen;
   padding: 5px;
-  margin: 5px;
+  margin: 5px;*/
+  width: 5%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  /*display: inline-block;*/
 }
