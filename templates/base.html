@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='{{url_for("static", filename="style.css")}}' rel="stylesheet" type="text/css">
+   <title>{% block title %} default title {% endblock %}</title>
+</head>
+<body>
+  <key>
+    {% block content %} default {% endblock content %}
+  </key>
+  <value>{% block answer %} default {% endblock answer %} </value>
+  <!-- <left> Previous </left> -->
+  <right> Next </right>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src='{{url_for("static", filename="behavior.js")}}'></script>
+</body>
+</html>
