@@ -1,25 +1,38 @@
-html, body{
-  margin: 25px;
+html {
+
+}
+body{
+  text-align: center;
+  background-color:lightgrey;
   height: 100%;
   width: 100%;
+  vertical-align:middle;
 }
-
+/*p{
+width: inherit;
+height: inherit;
+}*/
+flashcard {
+  background-color:red;
+  width: inherit;
+  height: inherit;
+}
 key {
-  background-color: lightgrey;
-  width: 100%;
-  border: 25px solid green;
-  padding: 25px;
-  margin: 25px;
+  background-color:pink;
+  border: 2px solid black;
+  width: inherit;
+  height: inherit;
 }
 
 value{
-  border: 2px solid grey;
+  border: 2px solid black;
+  margin: auto;
+  width: inherit;
+  height: inherit;
 }
 
 right{
-  background-color: lightgrey;
-  width: 5px;
+  background-color: lightgreen;
   border: 5px solid lightgreen;
-  padding: 5px;
-  margin: 5px;
+  margin: auto;
 }

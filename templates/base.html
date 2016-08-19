@@ -5,12 +5,18 @@
    <title>{% block title %} default title {% endblock %}</title>
 </head>
 <body>
-  <key>
-    {% block content %} default {% endblock content %}
-  </key>
-  <value>{% block answer %} default {% endblock answer %} </value>
+  <flashcard>
+    <p><key>
+      {% block content %} default {% endblock content %}
+    </key></p>
+    <p><value>
+      {% block answer %} default {% endblock answer %}
+    </value></p>
+  </flashcard>
   <!-- <left> Previous </left> -->
-  <right> Next </right>
+  <p><right>
+    Next
+  </right></p>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src='{{url_for("static", filename="behavior.js")}}'></script>
 </body>
