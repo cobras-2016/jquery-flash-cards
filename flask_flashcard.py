@@ -22,9 +22,15 @@ for k , v in dic.items():
 @app.route('/')
 def display():
     random_number = randint(0, len(dic))
+<<<<<<< HEAD
     tit =  "Flashcard " + key[random_number]
     con = "Key: " + key[random_number]
     ans = "Answer: " + answer[random_number]
+=======
+    tit =  "Flashcard" + key[random_number]
+    con = key[random_number]
+    ans = "Definition: " + answer[random_number]
+>>>>>>> 783aa4d10fc11d0ebc6ec0d09ac2b20f76012c47
     return render_template('extend.html', title=tit, content=con, answer=ans)
 
 if __name__ == '__main__':

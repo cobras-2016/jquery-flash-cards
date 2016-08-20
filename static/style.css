@@ -1,5 +1,5 @@
 html, body{
-  margin: 25px;
+  margin: auto;
   height: 100%;
   width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7,24 +7,35 @@ html, body{
 }
 
 key {
+<<<<<<< HEAD
   /*background-color: lightgrey;*/
   width: 40%;
   display: block;
   margin: auto;
   /*float: center;*/
+=======
+  width: 40%;
+  display: block;
+  margin: auto;
+>>>>>>> 783aa4d10fc11d0ebc6ec0d09ac2b20f76012c47
   text-align: center;
   padding: 200px 0 20px;
 }
 
 value{
+<<<<<<< HEAD
   /*border: 2px solid grey;
   float: center;
   clear: left;*/
+=======
+  color:white;
+>>>>>>> 783aa4d10fc11d0ebc6ec0d09ac2b20f76012c47
   width: 60%;
   display: block;
   margin: auto;
   text-align: center;
   padding-top: 20px;
+<<<<<<< HEAD
   padding-bottom: 50px;
   border-top-style: dotted;
   border-top-color: #4CAF50;
@@ -48,4 +59,59 @@ right{
   padding: 10px 32px;
   text-decoration: none;
   /*display: inline-block;*/
+=======
+  padding-bottom: 100px;
+  border-top-style: dotted;
+  border-top-color: #4CAF50;
 }
+.ph-container{
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  width: 0;
+  padding-left: 45%;
+  padding-right: 50%;
+  padding-bottom: 35%;
+}
+
+.ph-button {
+    border-style: solid;
+    border-width: 0px 0px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all 200ms ease-in-out 0s;
+    white-space: nowrap;
+    font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    padding: 19px 39px 18px;
+    font-size: 18px;
+
+>>>>>>> 783aa4d10fc11d0ebc6ec0d09ac2b20f76012c47
+}
+
+.ph-btn-green {
+
+    border-color: #3AC162;
+	background-color: #5FCF80;
+
+}
+.ph-btn-green:hover, .ph-btn-green:focus, .ph-btn-green:active {
+    background-color: #4BC970;
+    border-color: #3AC162;
+}
+
+
+
+/*next{
+  color: white;
+  border-color: #3AC162;
+  background-color: #5FCF80;
+}*/

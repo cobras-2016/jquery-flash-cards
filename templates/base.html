@@ -9,8 +9,12 @@
     {% block content %} default {% endblock content %}
   </key>
   <value>{% block answer %} default {% endblock answer %} </value>
-  <!-- <left> Previous </left> -->
-  <right> Next </right>
+  <div class="ph-container">
+    <div class="ph-float">
+      <a href='#' class='ph-button ph-btn-green'> Next </a>
+    </div>
+  </div>
+  <!-- <next> Next </next> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src='{{url_for("static", filename="behavior.js")}}'></script>
 </body>

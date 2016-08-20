@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('value').hide()
   $('key').on('click', function(){
-    // $('key').toggle()
     $('value').toggle()
+    $('value').css('color','black')
   })
-  $('right').on('click', function(){
+  $('.ph-button').on('click', function(){
     location.reload(true)
   })
 })
