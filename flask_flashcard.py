@@ -23,8 +23,8 @@ for k , v in dic.items():
 def display():
     random_number = randint(0, len(dic))
     tit =  "Flashcard" + key[random_number]
-    con = "Key: " + key[random_number]
-    ans = "Answer: " + answer[random_number]
+    con = key[random_number]
+    ans = "Definition: " + answer[random_number]
     return render_template('extend.html', title=tit, content=con, answer=ans)
 
 if __name__ == '__main__':
