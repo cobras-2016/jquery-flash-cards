@@ -2,37 +2,53 @@ html, body{
   margin: auto;
   height: 100%;
   width: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+  font-weight: 700;
   font-size: 120%;
+}
+h1{
+  font-size:150%;
+  margin: 10px 0px 10px 10px;
+}
+a{
+  color:white;
+}
+ul {
+  margin-top:0px;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+keyval {
+  height: 150px;
+  display:block;
+  text-align:center;
+  margin-top:200px;
+  padding:10px 10px 10px;
 }
 
 key {
-  width: 40%;
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding: 200px 0 20px;
+  padding-bottom:10px;
 }
 
 value{
   color:white;
-  width: 60%;
+  max-width: 600px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 100px;
   border-top-style: dotted;
-  border-top-color: #4CAF50;
+  border-top-color: white;
 }
 .ph-container{
-  margin: 0 auto;
-  position: fixed;
-  bottom: 0;
-  width: 0;
-  padding-left: 45%;
-  padding-right: 50%;
-  padding-bottom: 35%;
+  display:block;
+  border-color: black;
+  text-align: center;
 }
 
 .ph-button {
@@ -67,11 +83,3 @@ value{
     background-color: #4BC970;
     border-color: #3AC162;
 }
-
-
-
-/*next{
-  color: white;
-  border-color: #3AC162;
-  background-color: #5FCF80;
-}*/
