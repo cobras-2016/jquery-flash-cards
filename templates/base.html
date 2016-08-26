@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="shortcut icon" href="/static/favicon.ico">
   <link href='{{url_for("static", filename="style.css")}}' rel="stylesheet" type="text/css">
+  <link href='{{url_for("static", filename="materialize.min.js")}}' rel="stylesheet" type="text/css">
+
    <title>{% block title %} default title {% endblock %}</title>
 </head>
 <body>
   <header>
-    <h1>Flashcard Documentation</h1>
-    <ul>
-      <li><a href="#">Library</a></li>
-      <li><a href="#">Log In</a></li>
-</ul>
+    <h1 class="headerh1">Flashcard Documentation</h1>
+    <ul class="headerlist">
+      <li class="headerli"><a href="#">Library</a></li>
+      <li class="headerli"><a href="#">Log In</a></li>
+    </ul>
   </header>
-  <keyval>
-    <key>
-      {% block content %} default {% endblock content %}
-    </key>
-    <value>{% block answer %} default {% endblock answer %} </value>
-  </keyval>
+  <termdef>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div id="term" class="collapsible-header">{% block content %} default {% endblock content %}</div>
+        <div id="definition" class="collapsible-body"><p>{% block answer%} default {% endblock answer %}</p></div>
+      </li>
+    </ul>
+  </termdef>
     <div class="ph-container">
       <div class="ph-float">
         <a href='#' class='ph-button ph-btn-green'> Next </a>
@@ -25,6 +30,7 @@
     </div>
   <!-- <next> Next </next> -->
 <script type="text/javascript" src='{{url_for("static", filename="jquery-3.1.0.min.js")}}'></script>
+<script type="text/javascript" src='{{url_for("static", filename="materialize.min.js")}}'></script>
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 <script type="text/javascript" src='{{url_for("static", filename="behavior.js")}}'></script>
 </body>

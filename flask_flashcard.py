@@ -7,11 +7,6 @@ app = Flask(__name__)
 with open('data.pkl', 'rb') as f:
     dic = pickle.load(f)
 
-# x = [{k:v} for k,v in dic.items()]
-# print(x[6])
-# print(x[20])
-# print(x[33])
-#dic_object =[ for i in range(len(dic))]
 key= []
 answer=[]
 
@@ -25,7 +20,7 @@ def display():
     tit =  "Flashcard" + key[random_number]
     con = key[random_number]
     ans = "Definition: " + answer[random_number]
-    return render_template('extend.html', title=tit, content=con, answer=ans)
+    return render_template('flashcard.html', title=tit, content=con, answer=ans)
 
 if __name__ == '__main__':
     app.run(debug = True)
