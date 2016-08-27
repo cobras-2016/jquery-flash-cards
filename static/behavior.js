@@ -5,4 +5,5 @@ $(document).ready(function(){
   $('.ph-button').on('click', function(){
     location.reload(true)
   })
+  $(".dropdown-button").dropdown();
 })

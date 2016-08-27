@@ -4,17 +4,25 @@
   <link rel="shortcut icon" href="/static/favicon.ico">
   <link href='{{url_for("static", filename="style.css")}}' rel="stylesheet" type="text/css">
   <link href='{{url_for("static", filename="materialize.min.js")}}' rel="stylesheet" type="text/css">
+  <link href='{{url_for("static", filename="materialize.min.css")}}' rel="stylesheet" type="text/css">
 
    <title>{% block title %} default title {% endblock %}</title>
 </head>
 <body>
-  <header>
-    <h1 class="headerh1">Flashcard Documentation</h1>
-    <ul class="headerlist">
-      <li class="headerli"><a href="#">Library</a></li>
-      <li class="headerli"><a href="#">Log In</a></li>
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href="http://localhost:5000/jquery" class="library">Jquery</a></li>
+    <li class="divider"></li>
+  <li><a href="http://localhost:5000/fixedincome"class="library">Fixed Income</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="http://localhost:5000" class="brand-logo">ByteAcademy Flashcards</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">Libraries</i></a></li>
     </ul>
-  </header>
+  </div>
+</nav>
+<h1 class="headerdescription">{% block description%} {{description}} {%endblock%}</h1>
   <termdef>
     <ul class="collapsible" data-collapsible="accordion">
       <li>

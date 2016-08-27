@@ -5,21 +5,44 @@ app = Flask(__name__)
 
 
 with open('data.pkl', 'rb') as f:
-    dic = pickle.load(f)
+    jquerydic = pickle.load(f)
+
+with open('fixedincome.pkl', 'rb') as f:
+    fixedincome = pickle.load(f)
 
 key= []
 answer=[]
 
-for k , v in dic.items():
+for k , v in jquerydic.items():
     key.append(k)
     answer.append(v)
 
+fixedincomekey= []
+fixedincomeanswer=[]
+
+for k , v in fixedincome.items():
+    fixedincomekey.append(k)
+    fixedincomeanswer.append(v)
 @app.route('/')
-def display():
-    random_number = randint(0, len(dic))
-    tit =  "Flashcard" + key[random_number]
+def front():
+    tit="ByteAcademy Flashcard App"
+    description="Welcome to the Byte Academy developed flashcard app. We have some libraries for you to study from. Please click on libraries."
+    return render_template('flashcard.html', title=tit,description=description)
+@app.route('/jquery')
+def jquerydisplay():
+    random_number = randint(0, len(jquerydic))
+    tit =  "Jquery: " + key[random_number]
     con = key[random_number]
     ans = "Definition: " + answer[random_number]
+    return render_template('flashcard.html', title=tit, content=con, answer=ans)
+
+
+@app.route('/fixedincome')
+def fixedincomedisplay():
+    random_number = randint(0, len(fixedincome))
+    tit =  "Fixed Income: " + fixedincomekey[random_number]
+    con = fixedincomekey[random_number]
+    ans = "Definition: " + fixedincomeanswer[random_number]
     return render_template('flashcard.html', title=tit, content=con, answer=ans)
 
 if __name__ == '__main__':
